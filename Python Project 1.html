@@ -1,0 +1,3351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>191a1c91c86a4a64a442cbfc23d60ab0</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="d73533c9" class="cell markdown">
+<h1 id="1-importing-required-libraries">1. Importing Required
+Libraries</h1>
+</div>
+<div id="370fc7ff" class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&#39;ignore&#39;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler,LabelEncoder, MinMaxScaler</span></code></pre></div>
+</div>
+<div id="cfb17e69" class="cell markdown">
+<h1 id="1-read-the-dataset">1. Read the Dataset</h1>
+</div>
+<div id="4e5a3300" class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="vs">r&quot;C:\Users\SANATH\OneDrive\Desktop\fifa.csv&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="2">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Photo</th>
+      <th>Nationality</th>
+      <th>Flag</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>Club</th>
+      <th>Club Logo</th>
+      <th>...</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+      <th>Release Clause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>158023</td>
+      <td>L. Messi</td>
+      <td>31</td>
+      <td>https://cdn.sofifa.org/players/4/19/158023.png</td>
+      <td>Argentina</td>
+      <td>https://cdn.sofifa.org/flags/52.png</td>
+      <td>94</td>
+      <td>94</td>
+      <td>FC Barcelona</td>
+      <td>https://cdn.sofifa.org/teams/2/light/241.png</td>
+      <td>...</td>
+      <td>96.0</td>
+      <td>33.0</td>
+      <td>28.0</td>
+      <td>26.0</td>
+      <td>6.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>€226.5M</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20801</td>
+      <td>Cristiano Ronaldo</td>
+      <td>33</td>
+      <td>https://cdn.sofifa.org/players/4/19/20801.png</td>
+      <td>Portugal</td>
+      <td>https://cdn.sofifa.org/flags/38.png</td>
+      <td>94</td>
+      <td>94</td>
+      <td>Juventus</td>
+      <td>https://cdn.sofifa.org/teams/2/light/45.png</td>
+      <td>...</td>
+      <td>95.0</td>
+      <td>28.0</td>
+      <td>31.0</td>
+      <td>23.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>€127.1M</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>190871</td>
+      <td>Neymar Jr</td>
+      <td>26</td>
+      <td>https://cdn.sofifa.org/players/4/19/190871.png</td>
+      <td>Brazil</td>
+      <td>https://cdn.sofifa.org/flags/54.png</td>
+      <td>92</td>
+      <td>93</td>
+      <td>Paris Saint-Germain</td>
+      <td>https://cdn.sofifa.org/teams/2/light/73.png</td>
+      <td>...</td>
+      <td>94.0</td>
+      <td>27.0</td>
+      <td>24.0</td>
+      <td>33.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>11.0</td>
+      <td>€228.1M</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>193080</td>
+      <td>De Gea</td>
+      <td>27</td>
+      <td>https://cdn.sofifa.org/players/4/19/193080.png</td>
+      <td>Spain</td>
+      <td>https://cdn.sofifa.org/flags/45.png</td>
+      <td>91</td>
+      <td>93</td>
+      <td>Manchester United</td>
+      <td>https://cdn.sofifa.org/teams/2/light/11.png</td>
+      <td>...</td>
+      <td>68.0</td>
+      <td>15.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>90.0</td>
+      <td>85.0</td>
+      <td>87.0</td>
+      <td>88.0</td>
+      <td>94.0</td>
+      <td>€138.6M</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>192985</td>
+      <td>K. De Bruyne</td>
+      <td>27</td>
+      <td>https://cdn.sofifa.org/players/4/19/192985.png</td>
+      <td>Belgium</td>
+      <td>https://cdn.sofifa.org/flags/7.png</td>
+      <td>91</td>
+      <td>92</td>
+      <td>Manchester City</td>
+      <td>https://cdn.sofifa.org/teams/2/light/10.png</td>
+      <td>...</td>
+      <td>88.0</td>
+      <td>68.0</td>
+      <td>58.0</td>
+      <td>51.0</td>
+      <td>15.0</td>
+      <td>13.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>€196.4M</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 60 columns</p>
+</div>
+</div>
+</div>
+<div id="7cff8ab4" class="cell markdown">
+<h1
+id="2check-the-first-few-samples-shape-info-of-the-data-and-try-to-familiarize-yourself-with-different-features">2.Check
+the first few samples, shape, info of the data and try to familiarize
+yourself with different features.</h1>
+</div>
+<div id="5b9069f8" class="cell code" data-execution_count="3">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 18207 entries, 0 to 18206
+Data columns (total 60 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   ID                        18207 non-null  int64  
+ 1   Name                      18207 non-null  object 
+ 2   Age                       18207 non-null  int64  
+ 3   Photo                     18207 non-null  object 
+ 4   Nationality               18207 non-null  object 
+ 5   Flag                      18207 non-null  object 
+ 6   Overall                   18207 non-null  int64  
+ 7   Potential                 18207 non-null  int64  
+ 8   Club                      17966 non-null  object 
+ 9   Club Logo                 18207 non-null  object 
+ 10  Value                     18207 non-null  object 
+ 11  Wage                      18207 non-null  object 
+ 12  Preferred Foot            18159 non-null  object 
+ 13  International Reputation  18159 non-null  float64
+ 14  Weak Foot                 18159 non-null  float64
+ 15  Skill Moves               18159 non-null  float64
+ 16  Work Rate                 18159 non-null  object 
+ 17  Body Type                 18159 non-null  object 
+ 18  Position                  18147 non-null  object 
+ 19  Jersey Number             18147 non-null  float64
+ 20  Joined                    16654 non-null  object 
+ 21  Loaned From               1264 non-null   object 
+ 22  Contract Valid Until      17918 non-null  object 
+ 23  Height                    18159 non-null  object 
+ 24  Weight                    18159 non-null  object 
+ 25  Crossing                  18159 non-null  float64
+ 26  Finishing                 18159 non-null  float64
+ 27  HeadingAccuracy           18159 non-null  float64
+ 28  ShortPassing              18159 non-null  float64
+ 29  Volleys                   18159 non-null  float64
+ 30  Dribbling                 18159 non-null  float64
+ 31  Curve                     18159 non-null  float64
+ 32  FKAccuracy                18159 non-null  float64
+ 33  LongPassing               18159 non-null  float64
+ 34  BallControl               18159 non-null  float64
+ 35  Acceleration              18159 non-null  float64
+ 36  SprintSpeed               18159 non-null  float64
+ 37  Agility                   18159 non-null  float64
+ 38  Reactions                 18159 non-null  float64
+ 39  Balance                   18159 non-null  float64
+ 40  ShotPower                 18159 non-null  float64
+ 41  Jumping                   18159 non-null  float64
+ 42  Stamina                   18159 non-null  float64
+ 43  Strength                  18159 non-null  float64
+ 44  LongShots                 18159 non-null  float64
+ 45  Aggression                18159 non-null  float64
+ 46  Interceptions             18159 non-null  float64
+ 47  Positioning               18159 non-null  float64
+ 48  Vision                    18159 non-null  float64
+ 49  Penalties                 18159 non-null  float64
+ 50  Composure                 18159 non-null  float64
+ 51  Marking                   18159 non-null  float64
+ 52  StandingTackle            18159 non-null  float64
+ 53  SlidingTackle             18159 non-null  float64
+ 54  GKDiving                  18159 non-null  float64
+ 55  GKHandling                18159 non-null  float64
+ 56  GKKicking                 18159 non-null  float64
+ 57  GKPositioning             18159 non-null  float64
+ 58  GKReflexes                18159 non-null  float64
+ 59  Release Clause            16643 non-null  object 
+dtypes: float64(38), int64(4), object(18)
+memory usage: 8.3+ MB
+</code></pre>
+</div>
+</div>
+<div id="7acf1ed8" class="cell code" data-execution_count="4">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>(18207, 60)</code></pre>
+</div>
+</div>
+<div id="3d872a5c" class="cell code" data-execution_count="5">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.nunique()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>ID                          18207
+Name                        17194
+Age                            29
+Photo                       18207
+Nationality                   164
+Flag                          164
+Overall                        48
+Potential                      47
+Club                          651
+Club Logo                     679
+Value                         217
+Wage                          144
+Preferred Foot                  2
+International Reputation        5
+Weak Foot                       5
+Skill Moves                     5
+Work Rate                       9
+Body Type                      10
+Position                       27
+Jersey Number                  99
+Joined                       1736
+Loaned From                   341
+Contract Valid Until           36
+Height                         21
+Weight                         57
+Crossing                       89
+Finishing                      93
+HeadingAccuracy                91
+ShortPassing                   85
+Volleys                        87
+Dribbling                      94
+Curve                          89
+FKAccuracy                     90
+LongPassing                    84
+BallControl                    90
+Acceleration                   86
+SprintSpeed                    85
+Agility                        81
+Reactions                      68
+Balance                        81
+ShotPower                      92
+Jumping                        74
+Stamina                        85
+Strength                       74
+LongShots                      92
+Aggression                     85
+Interceptions                  89
+Positioning                    94
+Vision                         85
+Penalties                      87
+Composure                      84
+Marking                        92
+StandingTackle                 90
+SlidingTackle                  88
+GKDiving                       71
+GKHandling                     70
+GKKicking                      79
+GKPositioning                  79
+GKReflexes                     76
+Release Clause               1244
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="f08480a9" class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Age</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>International Reputation</th>
+      <th>Weak Foot</th>
+      <th>Skill Moves</th>
+      <th>Jersey Number</th>
+      <th>Crossing</th>
+      <th>Finishing</th>
+      <th>...</th>
+      <th>Penalties</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>18207.000000</td>
+      <td>18207.000000</td>
+      <td>18207.000000</td>
+      <td>18207.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18147.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>...</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+      <td>18159.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>214298.338606</td>
+      <td>25.122206</td>
+      <td>66.238699</td>
+      <td>71.307299</td>
+      <td>1.113222</td>
+      <td>2.947299</td>
+      <td>2.361308</td>
+      <td>19.546096</td>
+      <td>49.734181</td>
+      <td>45.550911</td>
+      <td>...</td>
+      <td>48.548598</td>
+      <td>58.648274</td>
+      <td>47.281623</td>
+      <td>47.697836</td>
+      <td>45.661435</td>
+      <td>16.616223</td>
+      <td>16.391596</td>
+      <td>16.232061</td>
+      <td>16.388898</td>
+      <td>16.710887</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>29965.244204</td>
+      <td>4.669943</td>
+      <td>6.908930</td>
+      <td>6.136496</td>
+      <td>0.394031</td>
+      <td>0.660456</td>
+      <td>0.756164</td>
+      <td>15.947765</td>
+      <td>18.364524</td>
+      <td>19.525820</td>
+      <td>...</td>
+      <td>15.704053</td>
+      <td>11.436133</td>
+      <td>19.904397</td>
+      <td>21.664004</td>
+      <td>21.289135</td>
+      <td>17.695349</td>
+      <td>16.906900</td>
+      <td>16.502864</td>
+      <td>17.034669</td>
+      <td>17.955119</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>16.000000</td>
+      <td>16.000000</td>
+      <td>46.000000</td>
+      <td>48.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>5.000000</td>
+      <td>2.000000</td>
+      <td>...</td>
+      <td>5.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>200315.500000</td>
+      <td>21.000000</td>
+      <td>62.000000</td>
+      <td>67.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>8.000000</td>
+      <td>38.000000</td>
+      <td>30.000000</td>
+      <td>...</td>
+      <td>39.000000</td>
+      <td>51.000000</td>
+      <td>30.000000</td>
+      <td>27.000000</td>
+      <td>24.000000</td>
+      <td>8.000000</td>
+      <td>8.000000</td>
+      <td>8.000000</td>
+      <td>8.000000</td>
+      <td>8.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>221759.000000</td>
+      <td>25.000000</td>
+      <td>66.000000</td>
+      <td>71.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>17.000000</td>
+      <td>54.000000</td>
+      <td>49.000000</td>
+      <td>...</td>
+      <td>49.000000</td>
+      <td>60.000000</td>
+      <td>53.000000</td>
+      <td>55.000000</td>
+      <td>52.000000</td>
+      <td>11.000000</td>
+      <td>11.000000</td>
+      <td>11.000000</td>
+      <td>11.000000</td>
+      <td>11.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>236529.500000</td>
+      <td>28.000000</td>
+      <td>71.000000</td>
+      <td>75.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>26.000000</td>
+      <td>64.000000</td>
+      <td>62.000000</td>
+      <td>...</td>
+      <td>60.000000</td>
+      <td>67.000000</td>
+      <td>64.000000</td>
+      <td>66.000000</td>
+      <td>64.000000</td>
+      <td>14.000000</td>
+      <td>14.000000</td>
+      <td>14.000000</td>
+      <td>14.000000</td>
+      <td>14.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>246620.000000</td>
+      <td>45.000000</td>
+      <td>94.000000</td>
+      <td>95.000000</td>
+      <td>5.000000</td>
+      <td>5.000000</td>
+      <td>5.000000</td>
+      <td>99.000000</td>
+      <td>93.000000</td>
+      <td>95.000000</td>
+      <td>...</td>
+      <td>92.000000</td>
+      <td>96.000000</td>
+      <td>94.000000</td>
+      <td>93.000000</td>
+      <td>91.000000</td>
+      <td>90.000000</td>
+      <td>92.000000</td>
+      <td>91.000000</td>
+      <td>90.000000</td>
+      <td>94.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 42 columns</p>
+</div>
+</div>
+</div>
+<div id="ff729f8d" class="cell markdown">
+<h1 id="3-drop-redundant-columns">3. Drop redundant Columns</h1>
+</div>
+<div id="9454ef37" class="cell code" data-execution_count="7">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df.drop(columns<span class="op">=</span>[<span class="st">&#39;Photo&#39;</span>, <span class="st">&#39;Flag&#39;</span>, <span class="st">&#39;Club Logo&#39;</span>],inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Nationality</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>Club</th>
+      <th>Value</th>
+      <th>Wage</th>
+      <th>Preferred Foot</th>
+      <th>...</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+      <th>Release Clause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>158023</td>
+      <td>L. Messi</td>
+      <td>31</td>
+      <td>Argentina</td>
+      <td>94</td>
+      <td>94</td>
+      <td>FC Barcelona</td>
+      <td>€110.5M</td>
+      <td>€565K</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>96.0</td>
+      <td>33.0</td>
+      <td>28.0</td>
+      <td>26.0</td>
+      <td>6.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>€226.5M</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20801</td>
+      <td>Cristiano Ronaldo</td>
+      <td>33</td>
+      <td>Portugal</td>
+      <td>94</td>
+      <td>94</td>
+      <td>Juventus</td>
+      <td>€77M</td>
+      <td>€405K</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>95.0</td>
+      <td>28.0</td>
+      <td>31.0</td>
+      <td>23.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>€127.1M</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>190871</td>
+      <td>Neymar Jr</td>
+      <td>26</td>
+      <td>Brazil</td>
+      <td>92</td>
+      <td>93</td>
+      <td>Paris Saint-Germain</td>
+      <td>€118.5M</td>
+      <td>€290K</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>94.0</td>
+      <td>27.0</td>
+      <td>24.0</td>
+      <td>33.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>11.0</td>
+      <td>€228.1M</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>193080</td>
+      <td>De Gea</td>
+      <td>27</td>
+      <td>Spain</td>
+      <td>91</td>
+      <td>93</td>
+      <td>Manchester United</td>
+      <td>€72M</td>
+      <td>€260K</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>68.0</td>
+      <td>15.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>90.0</td>
+      <td>85.0</td>
+      <td>87.0</td>
+      <td>88.0</td>
+      <td>94.0</td>
+      <td>€138.6M</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>192985</td>
+      <td>K. De Bruyne</td>
+      <td>27</td>
+      <td>Belgium</td>
+      <td>91</td>
+      <td>92</td>
+      <td>Manchester City</td>
+      <td>€102M</td>
+      <td>€355K</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>88.0</td>
+      <td>68.0</td>
+      <td>58.0</td>
+      <td>51.0</td>
+      <td>15.0</td>
+      <td>13.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>€196.4M</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 57 columns</p>
+</div>
+</div>
+</div>
+<div id="d6255b00" class="cell markdown">
+<h1 id="4-getting-rid-of-currency-values">4. getting rid of currency
+values</h1>
+</div>
+<div id="0903606b" class="cell code" data-execution_count="8">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Value&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Value&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&#39;€&#39;</span>,<span class="st">&#39;&#39;</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;Wage&quot;</span>] <span class="op">=</span> df[<span class="st">&#39;Value&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&#39;€&#39;</span>,<span class="st">&#39;&#39;</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Release Clause&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Value&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&#39;€&#39;</span>,<span class="st">&#39;&#39;</span>)</span></code></pre></div>
+</div>
+<div id="d359dca0" class="cell code" data-execution_count="9">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. replacing null values in release clause column with 0</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Release Clause&#39;</span>].fillna(<span class="dv">0</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+<pre><code>0        110.5M
+1           77M
+2        118.5M
+3           72M
+4          102M
+          ...  
+18202       60K
+18203       60K
+18204       60K
+18205       60K
+18206       60K
+Name: Release Clause, Length: 18207, dtype: object</code></pre>
+</div>
+</div>
+<div id="208b8743" class="cell code" data-execution_count="10">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+<pre><code>ID                              0
+Name                            0
+Age                             0
+Nationality                     0
+Overall                         0
+Potential                       0
+Club                          241
+Value                           0
+Wage                            0
+Preferred Foot                 48
+International Reputation       48
+Weak Foot                      48
+Skill Moves                    48
+Work Rate                      48
+Body Type                      48
+Position                       60
+Jersey Number                  60
+Joined                       1553
+Loaned From                 16943
+Contract Valid Until          289
+Height                         48
+Weight                         48
+Crossing                       48
+Finishing                      48
+HeadingAccuracy                48
+ShortPassing                   48
+Volleys                        48
+Dribbling                      48
+Curve                          48
+FKAccuracy                     48
+LongPassing                    48
+BallControl                    48
+Acceleration                   48
+SprintSpeed                    48
+Agility                        48
+Reactions                      48
+Balance                        48
+ShotPower                      48
+Jumping                        48
+Stamina                        48
+Strength                       48
+LongShots                      48
+Aggression                     48
+Interceptions                  48
+Positioning                    48
+Vision                         48
+Penalties                      48
+Composure                      48
+Marking                        48
+StandingTackle                 48
+SlidingTackle                  48
+GKDiving                       48
+GKHandling                     48
+GKKicking                      48
+GKPositioning                  48
+GKReflexes                     48
+Release Clause                  0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="d8036017" class="cell code">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. converting and multiplying M with 1000000 and k with 1000</span></span></code></pre></div>
+</div>
+<div id="0fe8f345" class="cell code" data-execution_count="11">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_currency_to_float(value_str):</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> value_str[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;M&#39;</span>:</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(value_str[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>]) <span class="op">*</span> <span class="dv">1000000</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> value_str[<span class="op">-</span><span class="dv">1</span>] <span class="op">==</span> <span class="st">&#39;K&#39;</span>:</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(value_str[<span class="dv">0</span>:<span class="op">-</span><span class="dv">1</span>]) <span class="op">*</span> <span class="dv">1000</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">float</span>(value_str[<span class="dv">0</span>:])</span></code></pre></div>
+</div>
+<div id="b70fdde5" class="cell code">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div id="c3d9e20c" class="cell code" data-execution_count="12">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>columns_to_convert <span class="op">=</span> [<span class="st">&quot;Value&quot;</span>, <span class="st">&quot;Wage&quot;</span>, <span class="st">&quot;Release Clause&quot;</span>]</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> columns_to_convert:</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    df[col] <span class="op">=</span> df[col].<span class="bu">apply</span>(convert_currency_to_float)</span></code></pre></div>
+</div>
+<div id="d453f069" class="cell code" data-execution_count="13">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Nationality</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>Club</th>
+      <th>Value</th>
+      <th>Wage</th>
+      <th>Preferred Foot</th>
+      <th>...</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+      <th>Release Clause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>158023</td>
+      <td>L. Messi</td>
+      <td>31</td>
+      <td>Argentina</td>
+      <td>94</td>
+      <td>94</td>
+      <td>FC Barcelona</td>
+      <td>110500000.0</td>
+      <td>110500000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>96.0</td>
+      <td>33.0</td>
+      <td>28.0</td>
+      <td>26.0</td>
+      <td>6.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>110500000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>20801</td>
+      <td>Cristiano Ronaldo</td>
+      <td>33</td>
+      <td>Portugal</td>
+      <td>94</td>
+      <td>94</td>
+      <td>Juventus</td>
+      <td>77000000.0</td>
+      <td>77000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>95.0</td>
+      <td>28.0</td>
+      <td>31.0</td>
+      <td>23.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>77000000.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>190871</td>
+      <td>Neymar Jr</td>
+      <td>26</td>
+      <td>Brazil</td>
+      <td>92</td>
+      <td>93</td>
+      <td>Paris Saint-Germain</td>
+      <td>118500000.0</td>
+      <td>118500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>94.0</td>
+      <td>27.0</td>
+      <td>24.0</td>
+      <td>33.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>15.0</td>
+      <td>11.0</td>
+      <td>118500000.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>193080</td>
+      <td>De Gea</td>
+      <td>27</td>
+      <td>Spain</td>
+      <td>91</td>
+      <td>93</td>
+      <td>Manchester United</td>
+      <td>72000000.0</td>
+      <td>72000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>68.0</td>
+      <td>15.0</td>
+      <td>21.0</td>
+      <td>13.0</td>
+      <td>90.0</td>
+      <td>85.0</td>
+      <td>87.0</td>
+      <td>88.0</td>
+      <td>94.0</td>
+      <td>72000000.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>192985</td>
+      <td>K. De Bruyne</td>
+      <td>27</td>
+      <td>Belgium</td>
+      <td>91</td>
+      <td>92</td>
+      <td>Manchester City</td>
+      <td>102000000.0</td>
+      <td>102000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>88.0</td>
+      <td>68.0</td>
+      <td>58.0</td>
+      <td>51.0</td>
+      <td>15.0</td>
+      <td>13.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>102000000.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>18202</th>
+      <td>238813</td>
+      <td>J. Lundstram</td>
+      <td>19</td>
+      <td>England</td>
+      <td>47</td>
+      <td>65</td>
+      <td>Crewe Alexandra</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>45.0</td>
+      <td>40.0</td>
+      <td>48.0</td>
+      <td>47.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>7.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>60000.0</td>
+    </tr>
+    <tr>
+      <th>18203</th>
+      <td>243165</td>
+      <td>N. Christoffersson</td>
+      <td>19</td>
+      <td>Sweden</td>
+      <td>47</td>
+      <td>63</td>
+      <td>Trelleborgs FF</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>42.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>19.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>60000.0</td>
+    </tr>
+    <tr>
+      <th>18204</th>
+      <td>241638</td>
+      <td>B. Worman</td>
+      <td>16</td>
+      <td>England</td>
+      <td>47</td>
+      <td>67</td>
+      <td>Cambridge United</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>41.0</td>
+      <td>32.0</td>
+      <td>13.0</td>
+      <td>11.0</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>6.0</td>
+      <td>13.0</td>
+      <td>60000.0</td>
+    </tr>
+    <tr>
+      <th>18205</th>
+      <td>246268</td>
+      <td>D. Walker-Rice</td>
+      <td>17</td>
+      <td>England</td>
+      <td>47</td>
+      <td>66</td>
+      <td>Tranmere Rovers</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>46.0</td>
+      <td>20.0</td>
+      <td>25.0</td>
+      <td>27.0</td>
+      <td>14.0</td>
+      <td>6.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>60000.0</td>
+    </tr>
+    <tr>
+      <th>18206</th>
+      <td>246269</td>
+      <td>G. Nugent</td>
+      <td>16</td>
+      <td>England</td>
+      <td>46</td>
+      <td>66</td>
+      <td>Tranmere Rovers</td>
+      <td>60000.0</td>
+      <td>60000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>43.0</td>
+      <td>40.0</td>
+      <td>43.0</td>
+      <td>50.0</td>
+      <td>10.0</td>
+      <td>15.0</td>
+      <td>9.0</td>
+      <td>12.0</td>
+      <td>9.0</td>
+      <td>60000.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>18207 rows × 57 columns</p>
+</div>
+</div>
+</div>
+<div id="c3c265ec" class="cell markdown">
+<h1
+id="5-convert-the-column-joined-into-integer-data-type-with-keeping-only-the-year">5.
+Convert the column "Joined" into integer data type with keeping only the
+year.</h1>
+</div>
+<div id="5970f1de" class="cell code" data-execution_count="15">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Joined&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Joined&#39;</span>])</span></code></pre></div>
+</div>
+<div id="6eea3da1" class="cell code" data-execution_count="16">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Joined&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Joined&#39;</span>].dt.year</span></code></pre></div>
+</div>
+<div id="3f8d4fbd" class="cell code" data-execution_count="17">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Joined&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>0        2004.0
+1        2018.0
+2        2017.0
+3        2011.0
+4        2015.0
+          ...  
+18202    2017.0
+18203    2018.0
+18204    2017.0
+18205    2018.0
+18206    2018.0
+Name: Joined, Length: 18207, dtype: float64</code></pre>
+</div>
+</div>
+<div id="c45e2bad" class="cell markdown">
+<h1
+id="6-convert-the-column-contract-valid-until-to-pandas-datetime-type">6.
+Convert the column "Contract Valid Until" to pandas datetime type.</h1>
+</div>
+<div id="5a483704" class="cell code" data-execution_count="19">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Contract Valid Until&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Contract Valid Until&#39;</span>])</span></code></pre></div>
+</div>
+<div id="5df78797" class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Contract Valid Until&#39;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+<pre><code>0       2021-01-01
+1       2022-01-01
+2       2022-01-01
+3       2020-01-01
+4       2023-01-01
+           ...    
+18202   2019-01-01
+18203   2020-01-01
+18204   2021-01-01
+18205   2019-01-01
+18206   2019-01-01
+Name: Contract Valid Until, Length: 18207, dtype: datetime64[ns]</code></pre>
+</div>
+</div>
+<div id="58d3b759" class="cell markdown">
+<h1
+id="7-the-column-height-is-in-inches-with-a-quotation-mark-convert-to-float-with-decimal-points">7.
+The column 'Height' is in inches with a quotation mark, Convert to float
+with decimal points.</h1>
+</div>
+<div id="b9076878" class="cell code" data-execution_count="22">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Height&#39;</span>].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+<pre><code>0     5&#39;7
+1     6&#39;2
+2     5&#39;9
+3     6&#39;4
+4    5&#39;11
+Name: Height, dtype: object</code></pre>
+</div>
+</div>
+<div id="73c2c817" class="cell code" data-execution_count="23">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_height(height_str):</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>        feet, inches <span class="op">=</span> height_str.split(<span class="st">&quot;&#39;&quot;</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>        total_feet <span class="op">=</span> <span class="bu">int</span>(feet) <span class="op">+</span> <span class="bu">int</span>(inches)<span class="op">/</span><span class="fl">12.0</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> total_feet</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span></code></pre></div>
+</div>
+<div id="70b89e53" class="cell code" data-execution_count="24">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Height&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Height&#39;</span>].<span class="bu">apply</span>(convert_height)</span></code></pre></div>
+</div>
+<div id="87bcff7d" class="cell code" data-execution_count="25">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">&#39;Height&#39;</span>])</span></code></pre></div>
+</div>
+<div id="6ac64ff9" class="cell code" data-execution_count="26">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Height&#39;</span>].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="26">
+<pre><code>0    5.583333
+1    6.166667
+2    5.750000
+3    6.333333
+4    5.916667
+Name: Height, dtype: float64</code></pre>
+</div>
+</div>
+<div id="2e5c06b3" class="cell markdown">
+<h1
+id="8-the-column-weight-has-the-suffix-as-lbs-remove-the-suffix-and-convert-to-float">8.
+The column "Weight" has the suffix as lbs, remove the suffix and convert
+to float.</h1>
+</div>
+<div id="f19c94bb" class="cell code" data-execution_count="27">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Weight&#39;</span>].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+<pre><code>0    159lbs
+1    183lbs
+2    150lbs
+3    168lbs
+4    154lbs
+Name: Weight, dtype: object</code></pre>
+</div>
+</div>
+<div id="b5a55d8e" class="cell code" data-execution_count="28">
+<div class="sourceCode" id="cb37"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convert_weight_to_float(weight_str):</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(weight_str.strip(<span class="st">&#39;lbs&#39;</span>))</span></code></pre></div>
+</div>
+<div id="a4286144" class="cell code" data-execution_count="29">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Weight&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Weight&#39;</span>].<span class="bu">apply</span>(convert_weight_to_float)</span></code></pre></div>
+</div>
+<div id="2c203d8f" class="cell code" data-execution_count="30">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Weight&#39;</span>].head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="30">
+<pre><code>0    159.0
+1    183.0
+2    150.0
+3    168.0
+4    154.0
+Name: Weight, dtype: float64</code></pre>
+</div>
+</div>
+<div id="2f3c9f5e" class="cell markdown">
+<h1
+id="9-check-for-the-percentage-of-missing-values-and-impute-them-with-appropriate-imputation-techniques">9.
+Check for the percentage of missing values and impute them with
+appropriate imputation techniques</h1>
+</div>
+<div id="447a0766" class="cell code" data-execution_count="32">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>missing_values <span class="op">=</span> df.isnull().<span class="bu">sum</span>() <span class="op">/</span> <span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span></span></code></pre></div>
+</div>
+<div id="2450539a" class="cell code" data-execution_count="33">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Percentage of missing values is: &quot;</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(missing_values)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Percentage of missing values is: 
+ID                           0.000000
+Name                         0.000000
+Age                          0.000000
+Nationality                  0.000000
+Overall                      0.000000
+Potential                    0.000000
+Club                         1.327166
+Value                        0.000000
+Wage                         0.000000
+Preferred Foot               0.000000
+International Reputation     0.000000
+Weak Foot                    0.000000
+Skill Moves                  0.000000
+Work Rate                    0.000000
+Body Type                    0.000000
+Position                     0.066083
+Jersey Number                0.066083
+Joined                       8.287901
+Loaned From                 93.039264
+Contract Valid Until         1.327166
+Height                       0.000000
+Weight                       0.000000
+Crossing                     0.000000
+Finishing                    0.000000
+HeadingAccuracy              0.000000
+ShortPassing                 0.000000
+Volleys                      0.000000
+Dribbling                    0.000000
+Curve                        0.000000
+FKAccuracy                   0.000000
+LongPassing                  0.000000
+BallControl                  0.000000
+Acceleration                 0.000000
+SprintSpeed                  0.000000
+Agility                      0.000000
+Reactions                    0.000000
+Balance                      0.000000
+ShotPower                    0.000000
+Jumping                      0.000000
+Stamina                      0.000000
+Strength                     0.000000
+LongShots                    0.000000
+Aggression                   0.000000
+Interceptions                0.000000
+Positioning                  0.000000
+Vision                       0.000000
+Penalties                    0.000000
+Composure                    0.000000
+Marking                      0.000000
+StandingTackle               0.000000
+SlidingTackle                0.000000
+GKDiving                     0.000000
+GKHandling                   0.000000
+GKKicking                    0.000000
+GKPositioning                0.000000
+GKReflexes                   0.000000
+Release Clause               0.000000
+dtype: float64
+</code></pre>
+</div>
+</div>
+<div id="ffd4f7d3" class="cell code" data-execution_count="34"
+data-scrolled="true">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Club&#39;</span>].head()</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>0           FC Barcelona
+1               Juventus
+2    Paris Saint-Germain
+3      Manchester United
+4        Manchester City
+Name: Club, dtype: object</code></pre>
+</div>
+</div>
+<div id="23f1809d" class="cell code">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<div id="1734d05c" class="cell code" data-execution_count="35"
+data-scrolled="false">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Position&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div id="64438682" class="cell code" data-execution_count="36">
+<div class="sourceCode" id="cb48"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Club&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div id="f99343df" class="cell code" data-execution_count="37">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Jersey Number&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Joined&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Loaned From&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Contract Valid Until&#39;</span>].fillna(<span class="st">&quot;Unknown&quot;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div id="7c2346e0" class="cell code" data-execution_count="38">
+<div class="sourceCode" id="cb50"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;DataFrame after imputation: &quot;</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>DataFrame after imputation: 
+           ID                Name  Age Nationality  Overall  Potential  \
+0      158023            L. Messi   31   Argentina       94         94   
+1       20801   Cristiano Ronaldo   33    Portugal       94         94   
+2      190871           Neymar Jr   26      Brazil       92         93   
+3      193080              De Gea   27       Spain       91         93   
+4      192985        K. De Bruyne   27     Belgium       91         92   
+...       ...                 ...  ...         ...      ...        ...   
+18202  238813        J. Lundstram   19     England       47         65   
+18203  243165  N. Christoffersson   19      Sweden       47         63   
+18204  241638           B. Worman   16     England       47         67   
+18205  246268      D. Walker-Rice   17     England       47         66   
+18206  246269           G. Nugent   16     England       46         66   
+
+                      Club        Value         Wage Preferred Foot  ...  \
+0             FC Barcelona  110500000.0  110500000.0           Left  ...   
+1                 Juventus   77000000.0   77000000.0          Right  ...   
+2      Paris Saint-Germain  118500000.0  118500000.0          Right  ...   
+3        Manchester United   72000000.0   72000000.0          Right  ...   
+4          Manchester City  102000000.0  102000000.0          Right  ...   
+...                    ...          ...          ...            ...  ...   
+18202      Crewe Alexandra      60000.0      60000.0          Right  ...   
+18203       Trelleborgs FF      60000.0      60000.0          Right  ...   
+18204     Cambridge United      60000.0      60000.0          Right  ...   
+18205      Tranmere Rovers      60000.0      60000.0          Right  ...   
+18206      Tranmere Rovers      60000.0      60000.0          Right  ...   
+
+       Composure  Marking  StandingTackle SlidingTackle GKDiving GKHandling  \
+0           96.0     33.0            28.0          26.0      6.0       11.0   
+1           95.0     28.0            31.0          23.0      7.0       11.0   
+2           94.0     27.0            24.0          33.0      9.0        9.0   
+3           68.0     15.0            21.0          13.0     90.0       85.0   
+4           88.0     68.0            58.0          51.0     15.0       13.0   
+...          ...      ...             ...           ...      ...        ...   
+18202       45.0     40.0            48.0          47.0     10.0       13.0   
+18203       42.0     22.0            15.0          19.0     10.0        9.0   
+18204       41.0     32.0            13.0          11.0      6.0        5.0   
+18205       46.0     20.0            25.0          27.0     14.0        6.0   
+18206       43.0     40.0            43.0          50.0     10.0       15.0   
+
+      GKKicking GKPositioning GKReflexes Release Clause  
+0          15.0          14.0        8.0    110500000.0  
+1          15.0          14.0       11.0     77000000.0  
+2          15.0          15.0       11.0    118500000.0  
+3          87.0          88.0       94.0     72000000.0  
+4           5.0          10.0       13.0    102000000.0  
+...         ...           ...        ...            ...  
+18202       7.0           8.0        9.0        60000.0  
+18203       9.0           5.0       12.0        60000.0  
+18204      10.0           6.0       13.0        60000.0  
+18205      14.0           8.0        9.0        60000.0  
+18206       9.0          12.0        9.0        60000.0  
+
+[18159 rows x 57 columns]
+</code></pre>
+</div>
+</div>
+<div id="4828648a" class="cell markdown">
+<h1 id="exploratory-data-analysis">EXPLORATORY DATA ANALYSIS</h1>
+</div>
+<div id="06eb3c1a" class="cell markdown">
+<h1
+id="10-distribution-of-overall-rating-for-all-the-players-and-write-your-findings">10.
+Distribution of Overall rating for all the players and write your
+findings</h1>
+</div>
+<div id="d463cfc4" class="cell code" data-execution_count="41">
+<div class="sourceCode" id="cb52"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>plt.hist(df[<span class="st">&#39;Overall&#39;</span>], bins<span class="op">=</span><span class="dv">15</span>, edgecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>, alpha<span class="op">=</span><span class="fl">0.9</span>)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Distribution of Overall Ratings&quot;</span>)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Overall Rating&#39;</span>)</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Players&#39;</span>)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_5909cfd697bc44caaf3f05fa8caabd64/ed2c867d9cd74b23d6b947f8370c294dd04dc435.png" /></p>
+</div>
+</div>
+<div id="b0b989e1" class="cell markdown">
+<blockquote>
+<p>Highest number of players are rated from 60 to 70 percentage. very
+less number of players are rated above 90 percentage.</p>
+</blockquote>
+</div>
+<div id="e56cf0a9" class="cell markdown">
+<h1
+id="11-retrieve-the-names-of-top20-players-based-on-the-overall-rating">11.
+Retrieve the names of top20 players based on the Overall rating</h1>
+</div>
+<div id="e7ee78b8" class="cell code" data-execution_count="43">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>top_20_players <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">&#39;Overall&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">20</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>top_20_names <span class="op">=</span> top_20_players[<span class="st">&#39;Name&#39;</span>].tolist()</span></code></pre></div>
+</div>
+<div id="5bb33621" class="cell code" data-execution_count="44">
+<div class="sourceCode" id="cb54"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Top 20 players based on Overall rating:&quot;</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top_20_names)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Top 20 players based on Overall rating:
+[&#39;L. Messi&#39;, &#39;Cristiano Ronaldo&#39;, &#39;Neymar Jr&#39;, &#39;De Gea&#39;, &#39;K. De Bruyne&#39;, &#39;E. Hazard&#39;, &#39;L. Modrić&#39;, &#39;L. Suárez&#39;, &#39;Sergio Ramos&#39;, &#39;D. Godín&#39;, &#39;David Silva&#39;, &#39;J. Oblak&#39;, &#39;T. Kroos&#39;, &#39;R. Lewandowski&#39;, &#39;Sergio Busquets&#39;, &#39;G. Chiellini&#39;, &#39;S. Agüero&#39;, &#39;M. Neuer&#39;, &#39;E. Cavani&#39;, &#39;H. Kane&#39;]
+</code></pre>
+</div>
+</div>
+<div id="2298443b" class="cell markdown">
+<h1
+id="12-generate-a-dataframe-which-should-include-all-the-information-of-the-top-20-players-based-on-the-overall-rating">12.
+Generate a dataframe which should include all the information of the Top
+20 players based on the Overall rating</h1>
+</div>
+<div id="8874fd22" class="cell code" data-execution_count="46">
+<div class="sourceCode" id="cb56"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>top_20_players <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">&#39;Overall&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>).head(<span class="dv">20</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>top_20_players_info <span class="op">=</span> df[df[<span class="st">&#39;Name&#39;</span>].isin(top_20_players[<span class="st">&#39;Name&#39;</span>])]</span></code></pre></div>
+</div>
+<div id="dbe625d0" class="cell code" data-execution_count="47">
+<div class="sourceCode" id="cb57"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;DataFrame with information of Top 20 players:&quot;</span>)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(top_20_players_info)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>DataFrame with information of Top 20 players:
+           ID               Name  Age Nationality  Overall  Potential  \
+0      158023           L. Messi   31   Argentina       94         94   
+1       20801  Cristiano Ronaldo   33    Portugal       94         94   
+2      190871          Neymar Jr   26      Brazil       92         93   
+3      193080             De Gea   27       Spain       91         93   
+4      192985       K. De Bruyne   27     Belgium       91         92   
+5      183277          E. Hazard   27     Belgium       91         91   
+6      177003          L. Modrić   32     Croatia       91         91   
+7      176580          L. Suárez   31     Uruguay       91         91   
+8      155862       Sergio Ramos   32       Spain       91         91   
+9      200389           J. Oblak   25    Slovenia       90         93   
+10     188545     R. Lewandowski   29      Poland       90         90   
+11     182521           T. Kroos   28     Germany       90         90   
+12     182493           D. Godín   32     Uruguay       90         90   
+13     168542        David Silva   32       Spain       90         90   
+16     202126            H. Kane   24     England       89         91   
+20     189511    Sergio Busquets   29       Spain       89         89   
+21     179813          E. Cavani   31     Uruguay       89         89   
+22     167495           M. Neuer   32     Germany       89         89   
+23     153079          S. Agüero   30   Argentina       89         89   
+24     138956       G. Chiellini   33       Italy       89         89   
+3379   225591          L. Suárez   22   Argentina       72         80   
+10802  236247            H. Kane   19     England       65         75   
+12727  245158          L. Suárez   20    Colombia       63         72   
+
+                         Club        Value         Wage Preferred Foot  ...  \
+0                FC Barcelona  110500000.0  110500000.0           Left  ...   
+1                    Juventus   77000000.0   77000000.0          Right  ...   
+2         Paris Saint-Germain  118500000.0  118500000.0          Right  ...   
+3           Manchester United   72000000.0   72000000.0          Right  ...   
+4             Manchester City  102000000.0  102000000.0          Right  ...   
+5                     Chelsea   93000000.0   93000000.0          Right  ...   
+6                 Real Madrid   67000000.0   67000000.0          Right  ...   
+7                FC Barcelona   80000000.0   80000000.0          Right  ...   
+8                 Real Madrid   51000000.0   51000000.0          Right  ...   
+9             Atlético Madrid   68000000.0   68000000.0          Right  ...   
+10          FC Bayern München   77000000.0   77000000.0          Right  ...   
+11                Real Madrid   76500000.0   76500000.0          Right  ...   
+12            Atlético Madrid   44000000.0   44000000.0          Right  ...   
+13            Manchester City   60000000.0   60000000.0           Left  ...   
+16          Tottenham Hotspur   83500000.0   83500000.0          Right  ...   
+20               FC Barcelona   51500000.0   51500000.0          Right  ...   
+21        Paris Saint-Germain   60000000.0   60000000.0          Right  ...   
+22          FC Bayern München   38000000.0   38000000.0          Right  ...   
+23            Manchester City   64500000.0   64500000.0          Right  ...   
+24                   Juventus   27000000.0   27000000.0           Left  ...   
+3379       Real Valladolid CF    4600000.0    4600000.0           Left  ...   
+10802        Doncaster Rovers     825000.0     825000.0          Right  ...   
+12727  Gimnàstic de Tarragona     575000.0     575000.0          Right  ...   
+
+       Composure  Marking  StandingTackle SlidingTackle GKDiving GKHandling  \
+0           96.0     33.0            28.0          26.0      6.0       11.0   
+1           95.0     28.0            31.0          23.0      7.0       11.0   
+2           94.0     27.0            24.0          33.0      9.0        9.0   
+3           68.0     15.0            21.0          13.0     90.0       85.0   
+4           88.0     68.0            58.0          51.0     15.0       13.0   
+5           91.0     34.0            27.0          22.0     11.0       12.0   
+6           84.0     60.0            76.0          73.0     13.0        9.0   
+7           85.0     62.0            45.0          38.0     27.0       25.0   
+8           82.0     87.0            92.0          91.0     11.0        8.0   
+9           70.0     27.0            12.0          18.0     86.0       92.0   
+10          86.0     34.0            42.0          19.0     15.0        6.0   
+11          85.0     72.0            79.0          69.0     10.0       11.0   
+12          82.0     90.0            89.0          89.0      6.0        8.0   
+13          93.0     59.0            53.0          29.0      6.0       15.0   
+16          89.0     56.0            36.0          38.0      8.0       10.0   
+20          90.0     90.0            86.0          80.0      5.0        8.0   
+21          82.0     52.0            45.0          39.0     12.0        5.0   
+22          70.0     17.0            10.0          11.0     90.0       86.0   
+23          90.0     30.0            20.0          12.0     13.0       15.0   
+24          84.0     93.0            93.0          90.0      3.0        3.0   
+3379        68.0     23.0            22.0          11.0     11.0       14.0   
+10802       59.0     49.0            57.0          62.0     11.0       12.0   
+12727       52.0     20.0            20.0          14.0      6.0        8.0   
+
+      GKKicking GKPositioning GKReflexes Release Clause  
+0          15.0          14.0        8.0    110500000.0  
+1          15.0          14.0       11.0     77000000.0  
+2          15.0          15.0       11.0    118500000.0  
+3          87.0          88.0       94.0     72000000.0  
+4           5.0          10.0       13.0    102000000.0  
+5           6.0           8.0        8.0     93000000.0  
+6           7.0          14.0        9.0     67000000.0  
+7          31.0          33.0       37.0     80000000.0  
+8           9.0           7.0       11.0     51000000.0  
+9          78.0          88.0       89.0     68000000.0  
+10         12.0           8.0       10.0     77000000.0  
+11         13.0           7.0       10.0     76500000.0  
+12         15.0           5.0       15.0     44000000.0  
+13          7.0           6.0       12.0     60000000.0  
+16         11.0          14.0       11.0     83500000.0  
+20         13.0           9.0       13.0     51500000.0  
+21         13.0          13.0       10.0     60000000.0  
+22         91.0          87.0       87.0     38000000.0  
+23          6.0          11.0       14.0     64500000.0  
+24          2.0           4.0        3.0     27000000.0  
+3379        6.0          15.0        7.0      4600000.0  
+10802       6.0          14.0        9.0       825000.0  
+12727      13.0          11.0        6.0       575000.0  
+
+[23 rows x 57 columns]
+</code></pre>
+</div>
+</div>
+<div id="e23ba0ba" class="cell markdown">
+<h1
+id="13-what-is-the-average-age-and-wage-of-these-top-20-players-using-above-df">13.
+What is the average "Age" and "Wage" of these top 20 players using above
+df</h1>
+</div>
+<div id="8ec3e73f" class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb59"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>top_20_players_info <span class="op">=</span> df[df[<span class="st">&#39;Name&#39;</span>].isin(top_20_players[<span class="st">&#39;Name&#39;</span>])]</span></code></pre></div>
+</div>
+<div id="337ea245" class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb60"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>average_age <span class="op">=</span> top_20_players_info[<span class="st">&#39;Age&#39;</span>].mean()</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>average_wage <span class="op">=</span> top_20_players_info[<span class="st">&#39;Wage&#39;</span>].mean()</span></code></pre></div>
+</div>
+<div id="9c5b8964" class="cell code" data-execution_count="51">
+<div class="sourceCode" id="cb61"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Average Age of the top 20 players:&quot;</span>, average_age)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Average Wage of the top 20 players:&quot;</span>, average_wage)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Average Age of the top 20 players: 28.347826086956523
+Average Wage of the top 20 players: 62043478.26086956
+</code></pre>
+</div>
+</div>
+<div id="e41afac8" class="cell markdown">
+<h1
+id="14-top-20-players-based-on-the-overall-rating-which-player-has-the-highest-wage">14.
+Top 20 players based on the Overall rating, which player has the highest
+wage</h1>
+</div>
+<div id="434e7caf" class="cell code" data-execution_count="53">
+<div class="sourceCode" id="cb63"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>highest_wage_player <span class="op">=</span> top_20_players_info[top_20_players_info[<span class="st">&#39;Wage&#39;</span>] <span class="op">==</span> top_20_players_info[<span class="st">&#39;Wage&#39;</span>].<span class="bu">max</span>()]</span></code></pre></div>
+</div>
+<div id="cc6e9415" class="cell code" data-execution_count="54">
+<div class="sourceCode" id="cb64"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Player with the highest wage among the top 20 players:&quot;</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Name:&quot;</span>, highest_wage_player[<span class="st">&#39;Name&#39;</span>])</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Player with the highest wage among the top 20 players:
+Name: 2    Neymar Jr
+Name: Name, dtype: object
+</code></pre>
+</div>
+</div>
+<div id="54ba5d53" class="cell markdown">
+<h1
+id="15-generate-a-dataframe-which-should-include-the-player-name-club-name-wage-and-overall-rating">15.
+Generate a dataframe which should include the "Player name", "Club
+Name", "Wage", and 'Overall rating'.</h1>
+</div>
+<div id="3e3076fa" class="cell code" data-execution_count="81">
+<div class="sourceCode" id="cb66"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>df_new <span class="op">=</span> [<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Club&quot;</span>, <span class="st">&quot;Wage&quot;</span>, <span class="st">&quot;Overall&quot;</span>]</span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>df_new1 <span class="op">=</span> df.loc[:, df_new].copy()</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>df_new1</span></code></pre></div>
+<div class="output execute_result" data-execution_count="81">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Club</th>
+      <th>Wage</th>
+      <th>Overall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>L. Messi</td>
+      <td>FC Barcelona</td>
+      <td>110500000.0</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cristiano Ronaldo</td>
+      <td>Juventus</td>
+      <td>77000000.0</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Neymar Jr</td>
+      <td>Paris Saint-Germain</td>
+      <td>118500000.0</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>De Gea</td>
+      <td>Manchester United</td>
+      <td>72000000.0</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>K. De Bruyne</td>
+      <td>Manchester City</td>
+      <td>102000000.0</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>18202</th>
+      <td>J. Lundstram</td>
+      <td>Crewe Alexandra</td>
+      <td>60000.0</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>18203</th>
+      <td>N. Christoffersson</td>
+      <td>Trelleborgs FF</td>
+      <td>60000.0</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>18204</th>
+      <td>B. Worman</td>
+      <td>Cambridge United</td>
+      <td>60000.0</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>18205</th>
+      <td>D. Walker-Rice</td>
+      <td>Tranmere Rovers</td>
+      <td>60000.0</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>18206</th>
+      <td>G. Nugent</td>
+      <td>Tranmere Rovers</td>
+      <td>60000.0</td>
+      <td>46</td>
+    </tr>
+  </tbody>
+</table>
+<p>18159 rows × 4 columns</p>
+</div>
+</div>
+</div>
+<div id="574b89c8" class="cell code" data-execution_count="57">
+<div class="sourceCode" id="cb67"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 15. i.</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>avg_ratings <span class="op">=</span> df.groupby(<span class="st">&quot;Club&quot;</span>)[<span class="st">&quot;Overall&quot;</span>].mean()</span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Average Overall rating for each club: &quot;</span>)</span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg_ratings)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Average Overall rating for each club: 
+Club
+ SSV Jahn Regensburg     65.586207
+1. FC Heidenheim 1846    65.750000
+1. FC Kaiserslautern     63.384615
+1. FC Köln               70.785714
+1. FC Magdeburg          65.615385
+                           ...    
+Zagłębie Sosnowiec       60.760000
+Çaykur Rizespor          66.900000
+Örebro SK                60.481481
+Östersunds FK            63.545455
+Śląsk Wrocław            62.208333
+Name: Overall, Length: 652, dtype: float64
+</code></pre>
+</div>
+</div>
+<div id="2b1297a0" class="cell code" data-execution_count="58">
+<div class="sourceCode" id="cb69"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 15. ii.</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>avg_ratings_df <span class="op">=</span> avg_ratings.reset_index()</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg_ratings)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Club
+ SSV Jahn Regensburg     65.586207
+1. FC Heidenheim 1846    65.750000
+1. FC Kaiserslautern     63.384615
+1. FC Köln               70.785714
+1. FC Magdeburg          65.615385
+                           ...    
+Zagłębie Sosnowiec       60.760000
+Çaykur Rizespor          66.900000
+Örebro SK                60.481481
+Östersunds FK            63.545455
+Śląsk Wrocław            62.208333
+Name: Overall, Length: 652, dtype: float64
+</code></pre>
+</div>
+</div>
+<div id="b0228993" class="cell code" data-execution_count="59">
+<div class="sourceCode" id="cb71"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>top10_clubs <span class="op">=</span> avg_ratings_df.nlargest(<span class="dv">10</span>, <span class="st">&quot;Overall&quot;</span>)</span></code></pre></div>
+</div>
+<div id="0e992f55" class="cell code" data-execution_count="60">
+<div class="sourceCode" id="cb72"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>plt.bar(top10_clubs[<span class="st">&quot;Club&quot;</span>], top10_clubs[<span class="st">&quot;Overall&quot;</span>])</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Club Name&quot;</span>)</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Average Overall Rating&quot;</span>)</span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Top 10 Clubs by Average Overall Rating&quot;</span>)</span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_5909cfd697bc44caaf3f05fa8caabd64/64b661d121a6b518c805f61abe1495e3e8d571f0.png" /></p>
+</div>
+</div>
+<div id="11c14e83" class="cell markdown">
+<h1
+id="16-what-is-the-relationship-between-age-and-individual-potential-of-the-player">16
+What is the relationship between age and individual potential of the
+player</h1>
+</div>
+<div id="7ee0f42b" class="cell code" data-execution_count="62">
+<div class="sourceCode" id="cb73"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[<span class="st">&quot;Age&quot;</span>], df[<span class="st">&quot;Potential&quot;</span>])</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Age&quot;</span>)</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Individual Potential&quot;</span>)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Relationship between Age and Indivual Potential&quot;</span>)</span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_5909cfd697bc44caaf3f05fa8caabd64/d569a11146baef8724d53f74a7813c3707c41743.png" /></p>
+</div>
+</div>
+<div id="67ef0a0f" class="cell markdown">
+<blockquote>
+<p>Highest potential is seen in players younger than 20 years of old.
+Players below the age of 35 displayed overall potential greater than 90.
+After the age 35, we can clearly see dip in individual potential of the
+players.</p>
+</blockquote>
+</div>
+<div id="9a7447fc" class="cell markdown">
+<h1
+id="17-features-directly-contribute-to-the-wages-of-the-players-using-potential-overall-value-international-reputation-and-release-clause">17.
+Features directly contribute to the wages of the players using
+potential, Overall, value, international reputation, and Release
+Clause.</h1>
+</div>
+<div id="377fd86b" class="cell code" data-execution_count="64">
+<div class="sourceCode" id="cb74"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>df_cor <span class="op">=</span> [<span class="st">&quot;Wage&quot;</span>, <span class="st">&quot;Potential&quot;</span>, <span class="st">&quot;Overall&quot;</span>, <span class="st">&quot;Value&quot;</span>, <span class="st">&quot;International Reputation&quot;</span>, <span class="st">&quot;Release Clause&quot;</span>]</span></code></pre></div>
+</div>
+<div id="36b212df" class="cell code" data-execution_count="65">
+<div class="sourceCode" id="cb75"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>dfnew_cor <span class="op">=</span> df.loc[:, df_cor].copy()</span></code></pre></div>
+</div>
+<div id="1e2662ad" class="cell code" data-execution_count="66">
+<div class="sourceCode" id="cb76"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>correlation_matrix <span class="op">=</span> dfnew_cor.corr()</span></code></pre></div>
+</div>
+<div id="37ba6ba8" class="cell code" data-execution_count="67">
+<div class="sourceCode" id="cb77"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>sns.heatmap(correlation_matrix, annot<span class="op">=</span><span class="va">True</span>, center<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Correlation Heatmap&quot;</span>)</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_5909cfd697bc44caaf3f05fa8caabd64/243f9825671b93ae972baeaf31f74d3eaa3ceb26.png" /></p>
+</div>
+</div>
+<div id="bf3eb012" class="cell markdown">
+<h1
+id="18-position-in-the-pitch-where-the-maximum-number-of-players-play-and-the-position-where-the-minimum-number-of-players-play">18.
+Position in the pitch where the maximum number of players play and the
+position where the minimum number of players play</h1>
+</div>
+<div id="d2cddda8" class="cell code" data-execution_count="68">
+<div class="sourceCode" id="cb78"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>p_df <span class="op">=</span> df.groupby(<span class="st">&#39;Position&#39;</span>)[<span class="st">&#39;Position&#39;</span>].count().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>p_df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="68">
+<pre><code>Position
+ST         2152
+GK         2025
+CB         1778
+CM         1394
+LB         1322
+RB         1291
+RM         1124
+LM         1095
+CAM         958
+CDM         948
+RCB         662
+LCB         648
+LCM         395
+RCM         391
+LW          381
+RW          370
+RDM         248
+LDM         243
+LS          207
+RS          203
+RWB          87
+LWB          78
+CF           74
+RAM          21
+LAM          21
+RF           16
+LF           15
+Unknown      12
+Name: Position, dtype: int64</code></pre>
+</div>
+</div>
+<div id="c7a238f2" class="cell code" data-execution_count="72">
+<div class="sourceCode" id="cb80"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span> <span class="op">=</span> p_df.index.tolist()</span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Pitch position of Max Number of Player : &#39;</span>, <span class="bu">list</span>[<span class="dv">0</span>])</span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Pitch position of Min Number of Player : &#39;</span>,<span class="bu">list</span>[<span class="op">-</span><span class="dv">2</span>])</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Pitch position of Max Number of Player :  ST
+Pitch position of Min Number of Player :  LF
+</code></pre>
+</div>
+</div>
+<div id="94215728" class="cell code" data-execution_count="75">
+<div class="sourceCode" id="cb82"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">18</span>, <span class="dv">9</span>))</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>p_df <span class="op">=</span> sns.countplot(y <span class="op">=</span> df[<span class="st">&#39;Position&#39;</span>], color <span class="op">=</span> <span class="st">&#39;cyan&#39;</span>)</span>
+<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a>p_df.set_xlabel(xlabel <span class="op">=</span> <span class="st">&#39;Number of Players&#39;</span>)</span>
+<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a>p_df.set_ylabel(ylabel <span class="op">=</span> <span class="st">&#39;Different Positions in Football&#39;</span>)</span>
+<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a>p_df.set_title(label <span class="op">=</span> <span class="st">&#39;Comparison of Positions and Players&#39;</span>)</span>
+<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a>p_df.bar_label(p_df.containers[<span class="dv">0</span>])</span>
+<span id="cb82-9"><a href="#cb82-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb82-10"><a href="#cb82-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_5909cfd697bc44caaf3f05fa8caabd64/a80cac852c45aa771f6dc67a760563daf3a6524e.png" /></p>
+</div>
+</div>
+<div id="855880ee" class="cell markdown">
+<h1
+id="19players-are-from-the-club-juventus-and-the-wage-is-greater-than-200k">19.Players
+are from the club 'Juventus' and the wage is greater than 200K</h1>
+</div>
+<div id="2f62b5fe" class="cell code" data-execution_count="76">
+<div class="sourceCode" id="cb83"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a>juv_val <span class="op">=</span> np.where((df[<span class="st">&#39;Club&#39;</span>] <span class="op">==</span> <span class="st">&#39;Juventus&#39;</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Wage&#39;</span>] <span class="op">&gt;</span> <span class="dv">200000</span>))</span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a>juventus_df <span class="op">=</span> df.loc[juv_val]</span>
+<span id="cb83-3"><a href="#cb83-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-4"><a href="#cb83-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">str</span>(juventus_df[<span class="st">&#39;Club&#39;</span>].count()) <span class="op">+</span> <span class="st">&quot; players in Juventus club has Wages &gt; 200000 &quot;</span>)</span>
+<span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>display(juventus_df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>25 players in Juventus club has Wages &gt; 200000 
+</code></pre>
+</div>
+<div class="output display_data">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Nationality</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>Club</th>
+      <th>Value</th>
+      <th>Wage</th>
+      <th>Preferred Foot</th>
+      <th>...</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+      <th>Release Clause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>20801</td>
+      <td>Cristiano Ronaldo</td>
+      <td>33</td>
+      <td>Portugal</td>
+      <td>94</td>
+      <td>94</td>
+      <td>Juventus</td>
+      <td>77000000.0</td>
+      <td>77000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>95.0</td>
+      <td>28.0</td>
+      <td>31.0</td>
+      <td>23.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>77000000.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>211110</td>
+      <td>P. Dybala</td>
+      <td>24</td>
+      <td>Argentina</td>
+      <td>89</td>
+      <td>94</td>
+      <td>Juventus</td>
+      <td>89000000.0</td>
+      <td>89000000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>84.0</td>
+      <td>23.0</td>
+      <td>20.0</td>
+      <td>20.0</td>
+      <td>5.0</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td>8.0</td>
+      <td>89000000.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>138956</td>
+      <td>G. Chiellini</td>
+      <td>33</td>
+      <td>Italy</td>
+      <td>89</td>
+      <td>89</td>
+      <td>Juventus</td>
+      <td>27000000.0</td>
+      <td>27000000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>84.0</td>
+      <td>93.0</td>
+      <td>93.0</td>
+      <td>90.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>27000000.0</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>191043</td>
+      <td>Alex Sandro</td>
+      <td>27</td>
+      <td>Brazil</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>36500000.0</td>
+      <td>36500000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>82.0</td>
+      <td>81.0</td>
+      <td>84.0</td>
+      <td>84.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>12.0</td>
+      <td>5.0</td>
+      <td>36500000.0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>190483</td>
+      <td>Douglas Costa</td>
+      <td>27</td>
+      <td>Brazil</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>46500000.0</td>
+      <td>46500000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>84.0</td>
+      <td>45.0</td>
+      <td>38.0</td>
+      <td>34.0</td>
+      <td>13.0</td>
+      <td>15.0</td>
+      <td>9.0</td>
+      <td>12.0</td>
+      <td>5.0</td>
+      <td>46500000.0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>184344</td>
+      <td>L. Bonucci</td>
+      <td>31</td>
+      <td>Italy</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>30000000.0</td>
+      <td>30000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>86.0</td>
+      <td>90.0</td>
+      <td>86.0</td>
+      <td>80.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>30000000.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>180206</td>
+      <td>M. Pjanić</td>
+      <td>28</td>
+      <td>Bosnia Herzegovina</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>44000000.0</td>
+      <td>44000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>86.0</td>
+      <td>75.0</td>
+      <td>74.0</td>
+      <td>70.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>13.0</td>
+      <td>7.0</td>
+      <td>8.0</td>
+      <td>44000000.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>177509</td>
+      <td>M. Benatia</td>
+      <td>31</td>
+      <td>Morocco</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>30000000.0</td>
+      <td>30000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>82.0</td>
+      <td>89.0</td>
+      <td>87.0</td>
+      <td>85.0</td>
+      <td>7.0</td>
+      <td>4.0</td>
+      <td>8.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>30000000.0</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>186153</td>
+      <td>W. Szczęsny</td>
+      <td>28</td>
+      <td>Poland</td>
+      <td>85</td>
+      <td>87</td>
+      <td>Juventus</td>
+      <td>32000000.0</td>
+      <td>32000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>65.0</td>
+      <td>20.0</td>
+      <td>13.0</td>
+      <td>12.0</td>
+      <td>85.0</td>
+      <td>81.0</td>
+      <td>71.0</td>
+      <td>85.0</td>
+      <td>87.0</td>
+      <td>32000000.0</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>179846</td>
+      <td>S. Khedira</td>
+      <td>31</td>
+      <td>Germany</td>
+      <td>85</td>
+      <td>85</td>
+      <td>Juventus</td>
+      <td>33000000.0</td>
+      <td>33000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>84.0</td>
+      <td>80.0</td>
+      <td>83.0</td>
+      <td>76.0</td>
+      <td>11.0</td>
+      <td>9.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>8.0</td>
+      <td>33000000.0</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>170890</td>
+      <td>B. Matuidi</td>
+      <td>31</td>
+      <td>France</td>
+      <td>85</td>
+      <td>85</td>
+      <td>Juventus</td>
+      <td>26000000.0</td>
+      <td>26000000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>82.0</td>
+      <td>85.0</td>
+      <td>84.0</td>
+      <td>86.0</td>
+      <td>8.0</td>
+      <td>11.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>14.0</td>
+      <td>26000000.0</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>198009</td>
+      <td>M. Perin</td>
+      <td>25</td>
+      <td>Italy</td>
+      <td>84</td>
+      <td>89</td>
+      <td>Juventus</td>
+      <td>29500000.0</td>
+      <td>29500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>65.0</td>
+      <td>20.0</td>
+      <td>12.0</td>
+      <td>19.0</td>
+      <td>81.0</td>
+      <td>85.0</td>
+      <td>71.0</td>
+      <td>79.0</td>
+      <td>90.0</td>
+      <td>29500000.0</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>193082</td>
+      <td>J. Cuadrado</td>
+      <td>30</td>
+      <td>Colombia</td>
+      <td>84</td>
+      <td>84</td>
+      <td>Juventus</td>
+      <td>29500000.0</td>
+      <td>29500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>80.0</td>
+      <td>63.0</td>
+      <td>70.0</td>
+      <td>74.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>13.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>29500000.0</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>181783</td>
+      <td>M. Mandžukić</td>
+      <td>32</td>
+      <td>Croatia</td>
+      <td>84</td>
+      <td>84</td>
+      <td>Juventus</td>
+      <td>25000000.0</td>
+      <td>25000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>80.0</td>
+      <td>59.0</td>
+      <td>64.0</td>
+      <td>64.0</td>
+      <td>10.0</td>
+      <td>8.0</td>
+      <td>5.0</td>
+      <td>8.0</td>
+      <td>15.0</td>
+      <td>25000000.0</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>137186</td>
+      <td>A. Barzagli</td>
+      <td>37</td>
+      <td>Italy</td>
+      <td>84</td>
+      <td>84</td>
+      <td>Juventus</td>
+      <td>4200000.0</td>
+      <td>4200000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>88.0</td>
+      <td>94.0</td>
+      <td>90.0</td>
+      <td>82.0</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>2.0</td>
+      <td>4.0</td>
+      <td>4200000.0</td>
+    </tr>
+    <tr>
+      <th>243</th>
+      <td>212404</td>
+      <td>F. Bernardeschi</td>
+      <td>24</td>
+      <td>Italy</td>
+      <td>82</td>
+      <td>87</td>
+      <td>Juventus</td>
+      <td>29500000.0</td>
+      <td>29500000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>83.0</td>
+      <td>65.0</td>
+      <td>46.0</td>
+      <td>42.0</td>
+      <td>14.0</td>
+      <td>15.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+      <td>12.0</td>
+      <td>29500000.0</td>
+    </tr>
+    <tr>
+      <th>245</th>
+      <td>211320</td>
+      <td>D. Rugani</td>
+      <td>23</td>
+      <td>Italy</td>
+      <td>82</td>
+      <td>86</td>
+      <td>Juventus</td>
+      <td>24500000.0</td>
+      <td>24500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>70.0</td>
+      <td>87.0</td>
+      <td>86.0</td>
+      <td>82.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>24500000.0</td>
+    </tr>
+    <tr>
+      <th>247</th>
+      <td>210514</td>
+      <td>João Cancelo</td>
+      <td>24</td>
+      <td>Portugal</td>
+      <td>82</td>
+      <td>88</td>
+      <td>Juventus</td>
+      <td>25500000.0</td>
+      <td>25500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>77.0</td>
+      <td>79.0</td>
+      <td>79.0</td>
+      <td>79.0</td>
+      <td>6.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>25500000.0</td>
+    </tr>
+    <tr>
+      <th>448</th>
+      <td>208333</td>
+      <td>E. Can</td>
+      <td>24</td>
+      <td>Germany</td>
+      <td>80</td>
+      <td>85</td>
+      <td>Juventus</td>
+      <td>19500000.0</td>
+      <td>19500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>74.0</td>
+      <td>82.0</td>
+      <td>81.0</td>
+      <td>80.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>8.0</td>
+      <td>13.0</td>
+      <td>11.0</td>
+      <td>19500000.0</td>
+    </tr>
+    <tr>
+      <th>815</th>
+      <td>206058</td>
+      <td>M. De Sciglio</td>
+      <td>25</td>
+      <td>Italy</td>
+      <td>78</td>
+      <td>81</td>
+      <td>Juventus</td>
+      <td>10500000.0</td>
+      <td>10500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>72.0</td>
+      <td>79.0</td>
+      <td>78.0</td>
+      <td>78.0</td>
+      <td>5.0</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>3.0</td>
+      <td>10500000.0</td>
+    </tr>
+    <tr>
+      <th>1049</th>
+      <td>202884</td>
+      <td>L. Spinazzola</td>
+      <td>25</td>
+      <td>Italy</td>
+      <td>77</td>
+      <td>80</td>
+      <td>Juventus</td>
+      <td>11000000.0</td>
+      <td>11000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>74.0</td>
+      <td>77.0</td>
+      <td>76.0</td>
+      <td>76.0</td>
+      <td>11.0</td>
+      <td>13.0</td>
+      <td>12.0</td>
+      <td>15.0</td>
+      <td>14.0</td>
+      <td>11000000.0</td>
+    </tr>
+    <tr>
+      <th>1149</th>
+      <td>227535</td>
+      <td>R. Bentancur</td>
+      <td>21</td>
+      <td>Uruguay</td>
+      <td>77</td>
+      <td>89</td>
+      <td>Juventus</td>
+      <td>15500000.0</td>
+      <td>15500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>80.0</td>
+      <td>75.0</td>
+      <td>72.0</td>
+      <td>64.0</td>
+      <td>8.0</td>
+      <td>7.0</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>12.0</td>
+      <td>15500000.0</td>
+    </tr>
+    <tr>
+      <th>3418</th>
+      <td>236610</td>
+      <td>M. Kean</td>
+      <td>18</td>
+      <td>Italy</td>
+      <td>72</td>
+      <td>87</td>
+      <td>Juventus</td>
+      <td>6500000.0</td>
+      <td>6500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>68.0</td>
+      <td>27.0</td>
+      <td>28.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>8.0</td>
+      <td>10.0</td>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>6500000.0</td>
+    </tr>
+    <tr>
+      <th>3700</th>
+      <td>189342</td>
+      <td>C. Pinsoglio</td>
+      <td>28</td>
+      <td>Italy</td>
+      <td>72</td>
+      <td>72</td>
+      <td>Juventus</td>
+      <td>2200000.0</td>
+      <td>2200000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>64.0</td>
+      <td>20.0</td>
+      <td>12.0</td>
+      <td>13.0</td>
+      <td>74.0</td>
+      <td>70.0</td>
+      <td>58.0</td>
+      <td>74.0</td>
+      <td>76.0</td>
+      <td>2200000.0</td>
+    </tr>
+    <tr>
+      <th>13848</th>
+      <td>230631</td>
+      <td>M. Festa</td>
+      <td>26</td>
+      <td>Italy</td>
+      <td>62</td>
+      <td>65</td>
+      <td>Crotone</td>
+      <td>260000.0</td>
+      <td>260000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>53.0</td>
+      <td>11.0</td>
+      <td>15.0</td>
+      <td>18.0</td>
+      <td>65.0</td>
+      <td>62.0</td>
+      <td>58.0</td>
+      <td>59.0</td>
+      <td>61.0</td>
+      <td>260000.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>25 rows × 57 columns</p>
+</div>
+</div>
+</div>
+<div id="1ba1cd45" class="cell markdown">
+<h1
+id="20-data-frame-containing-top-5-players-by-overall-rating-for-each-unique-position">20.
+Data frame containing top 5 players by Overall rating for each unique
+position</h1>
+</div>
+<div id="f825607b" class="cell code" data-execution_count="77"
+data-scrolled="true">
+<div class="sourceCode" id="cb85"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a>t5_unique_p <span class="op">=</span> df.groupby(by <span class="op">=</span> [<span class="st">&#39;Position&#39;</span>]).<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.sort_values(<span class="st">&#39;Overall&#39;</span>, ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">5</span>))</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>display(t5_unique_p)</span></code></pre></div>
+<div class="output display_data">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Nationality</th>
+      <th>Overall</th>
+      <th>Potential</th>
+      <th>Club</th>
+      <th>Value</th>
+      <th>Wage</th>
+      <th>Preferred Foot</th>
+      <th>...</th>
+      <th>Composure</th>
+      <th>Marking</th>
+      <th>StandingTackle</th>
+      <th>SlidingTackle</th>
+      <th>GKDiving</th>
+      <th>GKHandling</th>
+      <th>GKKicking</th>
+      <th>GKPositioning</th>
+      <th>GKReflexes</th>
+      <th>Release Clause</th>
+    </tr>
+    <tr>
+      <th>Position</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="5" valign="top">CAM</th>
+      <th>17</th>
+      <td>194765</td>
+      <td>A. Griezmann</td>
+      <td>27</td>
+      <td>France</td>
+      <td>89</td>
+      <td>90</td>
+      <td>Atlético Madrid</td>
+      <td>78000000.0</td>
+      <td>78000000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>87.0</td>
+      <td>59.0</td>
+      <td>47.0</td>
+      <td>48.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>14.0</td>
+      <td>13.0</td>
+      <td>14.0</td>
+      <td>78000000.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>190460</td>
+      <td>C. Eriksen</td>
+      <td>26</td>
+      <td>Denmark</td>
+      <td>88</td>
+      <td>91</td>
+      <td>Tottenham Hotspur</td>
+      <td>73500000.0</td>
+      <td>73500000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>88.0</td>
+      <td>59.0</td>
+      <td>57.0</td>
+      <td>22.0</td>
+      <td>9.0</td>
+      <td>14.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>73500000.0</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>201942</td>
+      <td>Roberto Firmino</td>
+      <td>26</td>
+      <td>Brazil</td>
+      <td>86</td>
+      <td>87</td>
+      <td>Liverpool</td>
+      <td>53000000.0</td>
+      <td>53000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>87.0</td>
+      <td>60.0</td>
+      <td>64.0</td>
+      <td>42.0</td>
+      <td>8.0</td>
+      <td>11.0</td>
+      <td>9.0</td>
+      <td>6.0</td>
+      <td>10.0</td>
+      <td>53000000.0</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>189596</td>
+      <td>T. Müller</td>
+      <td>28</td>
+      <td>Germany</td>
+      <td>86</td>
+      <td>86</td>
+      <td>FC Bayern München</td>
+      <td>45000000.0</td>
+      <td>45000000.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>83.0</td>
+      <td>44.0</td>
+      <td>41.0</td>
+      <td>44.0</td>
+      <td>6.0</td>
+      <td>7.0</td>
+      <td>11.0</td>
+      <td>14.0</td>
+      <td>14.0</td>
+      <td>45000000.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>176635</td>
+      <td>M. Özil</td>
+      <td>29</td>
+      <td>Germany</td>
+      <td>86</td>
+      <td>86</td>
+      <td>Arsenal</td>
+      <td>43500000.0</td>
+      <td>43500000.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>82.0</td>
+      <td>24.0</td>
+      <td>16.0</td>
+      <td>19.0</td>
+      <td>6.0</td>
+      <td>14.0</td>
+      <td>10.0</td>
+      <td>6.0</td>
+      <td>14.0</td>
+      <td>43500000.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">Unknown</th>
+      <th>5018</th>
+      <td>153160</td>
+      <td>R. Raldes</td>
+      <td>37</td>
+      <td>Bolivia</td>
+      <td>70</td>
+      <td>70</td>
+      <td>Unknown</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>64.0</td>
+      <td>79.0</td>
+      <td>70.0</td>
+      <td>70.0</td>
+      <td>16.0</td>
+      <td>8.0</td>
+      <td>11.0</td>
+      <td>12.0</td>
+      <td>13.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>6736</th>
+      <td>175393</td>
+      <td>J. Arce</td>
+      <td>33</td>
+      <td>Bolivia</td>
+      <td>68</td>
+      <td>68</td>
+      <td>Unknown</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Left</td>
+      <td>...</td>
+      <td>67.0</td>
+      <td>12.0</td>
+      <td>34.0</td>
+      <td>33.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>15.0</td>
+      <td>16.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7922</th>
+      <td>195905</td>
+      <td>L. Gutiérrez</td>
+      <td>33</td>
+      <td>Bolivia</td>
+      <td>67</td>
+      <td>67</td>
+      <td>Unknown</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>54.0</td>
+      <td>72.0</td>
+      <td>71.0</td>
+      <td>64.0</td>
+      <td>11.0</td>
+      <td>7.0</td>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>9905</th>
+      <td>226044</td>
+      <td>R. Vargas</td>
+      <td>23</td>
+      <td>Bolivia</td>
+      <td>66</td>
+      <td>69</td>
+      <td>Unknown</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>64.0</td>
+      <td>19.0</td>
+      <td>24.0</td>
+      <td>23.0</td>
+      <td>13.0</td>
+      <td>11.0</td>
+      <td>11.0</td>
+      <td>7.0</td>
+      <td>9.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>10628</th>
+      <td>216751</td>
+      <td>D. Bejarano</td>
+      <td>26</td>
+      <td>Bolivia</td>
+      <td>65</td>
+      <td>66</td>
+      <td>Unknown</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Right</td>
+      <td>...</td>
+      <td>57.0</td>
+      <td>68.0</td>
+      <td>69.0</td>
+      <td>68.0</td>
+      <td>14.0</td>
+      <td>12.0</td>
+      <td>11.0</td>
+      <td>14.0</td>
+      <td>12.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>140 rows × 57 columns</p>
+</div>
+</div>
+</div>
+<div id="a81e4417" class="cell markdown">
+<h1
+id="21average-wage-one-can-expect-to-pay-for-the-top-5-players-in-every-position">21.average
+wage one can expect to pay for the top 5 players in every position</h1>
+</div>
+<div id="b02c3c1e" class="cell code" data-execution_count="78">
+<div class="sourceCode" id="cb86"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>avg_wage<span class="op">=</span> t5_unique_p[<span class="st">&#39;Wage&#39;</span>].groupby(<span class="st">&#39;Position&#39;</span>).<span class="bu">apply</span>(np.mean)</span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Average Wage of top 5 players based on Overall rating for every Position : &#39;</span>)</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avg_wage)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Average Wage of top 5 players based on Overall rating for every Position : 
+Position
+CAM        58600000.0
+CB         33700000.0
+CDM        41400000.0
+CF         20600000.0
+CM         40000000.0
+GK         57900000.0
+LAM        20460000.0
+LB         35400000.0
+LCB        40500000.0
+LCM        55700000.0
+LDM        35800000.0
+LF         46700000.0
+LM         49200000.0
+LS         43500000.0
+LW         76900000.0
+LWB        12100000.0
+RAM        15460000.0
+RB         27500000.0
+RCB        37800000.0
+RCM        61300000.0
+RDM        26600000.0
+RF         36000000.0
+RM         49300000.0
+RS         32700000.0
+RW         49600000.0
+RWB        12500000.0
+ST         72400000.0
+Unknown           0.0
+Name: Wage, dtype: float64
+</code></pre>
+</div>
+</div>
+<div id="9ffe40c8" class="cell markdown">
+<blockquote>
+<p>Highest wage of top 5 players on overall rating is found for
+position: LW.</p>
+</blockquote>
+</div>
+</body>
+</html>
